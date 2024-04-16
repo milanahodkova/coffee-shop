@@ -22,11 +22,11 @@
                 }
             }
             if (selectedCount === 0) {
-                alert("Please select at least one coffee.");
+                alert("Пожалуйста, выберите хотя бы один кофе");
                 return false;
             }
             if (quantityCount !== selectedCount) {
-                alert("Please enter a quantity for each selected coffee.");
+                alert("Пожалуйста, введите количество для каждого выбранного кофе");
                 return false;
             }
             return true;
