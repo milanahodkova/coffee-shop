@@ -7,7 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <title>YOUR ORDER</title>
-    <style><%@include file="/css/style.css"%></style>
+    <style>
+        <%@include file="/css/style.css" %>
+    </style>
 </head>
 <body>
 <div class="page-container">
@@ -57,19 +59,17 @@
                     <td><%= decimalFormat.format(sum) %>
                     </td>
                 </tr>
-
                 <%
                     if (freeCups > 0) {
                 %>
                 <tr>
                     <td colspan="3"></td>
-                    <td>-<%= decimalFormat.format(freeCups*price)%>
+                    <td>-<%= decimalFormat.format(freeCups * price)%>
                     </td>
                 </tr>
                 <%
                     }
                 %>
-
                 <%
                     }
                 %>

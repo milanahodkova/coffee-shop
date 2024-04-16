@@ -1,22 +1,13 @@
 package org.example.controller;
 
-import org.example.dao.CoffeeOrderDAO;
-import org.example.dao.CoffeeOrderItemDAO;
-import org.example.dao.CoffeeTypeDAO;
-import org.example.daoImpl.CoffeeOrderDAOImpl;
-import org.example.daoImpl.CoffeeOrderItemDAOImpl;
-import org.example.daoImpl.CoffeeTypeDAOImpl;
-import org.example.models.CoffeeOrder;
-import org.example.models.CoffeeOrderItem;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.example.service.CoffeeOrderService;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @WebServlet("/orderlist")

@@ -1,7 +1,10 @@
 package org.example.controller;
 
-import org.example.dao.CoffeeTypeDAO;
-import org.example.dao.ConfigurationDAO;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.example.daoImpl.CoffeeTypeDAOImpl;
 import org.example.daoImpl.ConfigurationDAOImpl;
 import org.example.exceptions.InvalidQuantityException;
@@ -10,9 +13,6 @@ import org.example.service.CoffeeTypeService;
 import org.example.service.ConfigurationService;
 import org.example.service.PricingService;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

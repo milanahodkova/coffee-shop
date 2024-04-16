@@ -8,21 +8,14 @@ import org.example.daoImpl.CoffeeOrderItemDAOImpl;
 import org.example.daoImpl.CoffeeTypeDAOImpl;
 import org.example.models.CoffeeOrder;
 import org.example.models.CoffeeOrderItem;
-import org.example.utils.DatabaseUtil;
 
-import javax.servlet.http.HttpSession;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CoffeeOrderService {
-    private CoffeeOrderDAO coffeeOrderDAO;
-    private CoffeeTypeDAO coffeeTypeDAO;
-    private CoffeeOrderItemDAO coffeeOrderItemDAO;
+    private final CoffeeOrderDAO coffeeOrderDAO;
+    private final CoffeeTypeDAO coffeeTypeDAO;
+    private final CoffeeOrderItemDAO coffeeOrderItemDAO;
 
     public CoffeeOrderService() {
         coffeeOrderDAO = new CoffeeOrderDAOImpl();
